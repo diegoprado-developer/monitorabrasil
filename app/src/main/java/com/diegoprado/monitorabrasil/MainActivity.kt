@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.rv_proposicoes)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        adapter = ProposicoesAdapter(list, this)
+        adapter = ProposicoesAdapter(list, this, requestQueue)
         recyclerView.adapter = adapter
 
         load()
